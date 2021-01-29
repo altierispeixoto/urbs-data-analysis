@@ -2,11 +2,11 @@ version: '3.1'
 
 services:
   jupyterlab:
-    container_name: jupyterlab
+    container_name: urbs-data-analysis
     restart: always
     user: root
     build: .
-    image: utfpr/jupyterlab:latest
+    image: utfpr/urbs-data-analysis:latest
     working_dir: /opt/urbs-data-analysis/
     ports:
       - 8085:8085

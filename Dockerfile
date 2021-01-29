@@ -10,7 +10,7 @@ WORKDIR /opt/urbs-data-analysis/
 ADD requirements.txt .
 RUN pip install -r requirements.txt
 
-CMD python setup.py -q develop && jupyter lab \
+CMD  jupyter lab \
         --ip=0.0.0.0 \
         --port=8085 \
         --allow-root \
