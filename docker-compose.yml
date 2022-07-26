@@ -9,8 +9,8 @@ services:
     image: utfpr/urbs-data-analysis:latest
     working_dir: /opt/urbs-data-analysis/
     ports:
-      - 8085:8085
-      - 4040:4040
+      - 8086:8085
+      - 4041:4040
     volumes:
       - .:/opt/urbs-data-analysis/
-      - /work/datalake:/data/
+      - /mnt/work/datalake:/data/
